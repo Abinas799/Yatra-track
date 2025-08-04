@@ -1,0 +1,20 @@
+{
+  "name": "yatra-track",
+  "version": "1.0.0",
+  "description": "A full-stack web application for planning and managing travel routes or events",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd server && npm run dev",
+    "client": "cd client && npm start",
+    "install-all": "npm install && cd server && npm install && cd ../client && npm install",
+    "build": "cd client && npm run build",
+    "migrate": "node migrate-database.js"
+  },
+  "keywords": ["travel", "events", "planning", "fullstack", "react", "nodejs"],
+  "author": "YatraTrack Team",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+} 
